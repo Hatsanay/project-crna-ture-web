@@ -87,13 +87,13 @@
                       <!-- text input -->
                       <div class="form-group">
                         <label>หมายเลขห้อง</label>
-                        <input type="text" class="form-control" placeholder="000">
+                        <input type="text" class="form-control" placeholder="000" name="">
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>ชื่อ-นามสกุล</label>
-                        <input type="text" class="form-control" placeholder="สมศักดิ์ ใจดี " disabled>
+                        <input type="text" class="form-control" placeholder="สมศักดิ์ ใจดี" >
                       </div>
                     </div>
                   </div>
@@ -130,7 +130,11 @@
                         <button class="btn btn-primary btn-lg btn1" type="submit" value="">แจ้ง</button>
                       </div>
                     </div>
-        
+                    </div>
+                  </div>
+                </form>
+              </div>
+      </div>
     </section>
 
     <!-- <section class="content pb-3">
