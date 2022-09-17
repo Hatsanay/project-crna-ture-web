@@ -15,7 +15,23 @@
   <link rel="stylesheet" href="../dist/css/adminlte.min.css">
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+
+
 </head>
+
+
+
+
+
+
+
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
   <!-- Navbar -->
@@ -36,21 +52,73 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-6">
-            <h1>แก้ไขรายการแจ้งซ่อม</h1>
+            <!-- <h1>แจ้งเตือน</h1> -->
           </div>
           <div class="col-sm-6 d-none d-sm-block">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">รายการแจ้งซ่อม</a></li>
+              <!-- <li class="breadcrumb-item"><a href="#">รอยืนยัน</a></li> -->
               <li class="breadcrumb-item active"></li>
             </ol>
           </div>
         </div>
       </div>
+
+      <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">รอยืนยันการแจ้งซ่อม</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="notifytable" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>รหัส</th>
+                    <th>หมายเลขห้อง</th>
+                    <th>ชื่อ-นามสกุล</th>
+                    <th>ปัญหา</th>
+                    <th>รายละเอียดเพิ่มเติม</th>
+                    <th>เบอร์โทร</th>
+                    <th>วันที่แจ้ง</th>
+                    <th>ยืนยันแจ้งซ่อม</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+
+      <?php
+        include "connectpdo.php";
+          $stmt = $conn->query("SELECT * FROM `request` WHERE reqstatus LIKE 'Y'");
+          $stmt->execute();
+
+          $reqs= $stmt->fetchAll();
+          foreach($reqs as $requ){
+      ?> 
+                  <tr>
+                    <td><?php echo $requ['reqid']?></td>
+                    <td><?php echo $requ['reqroom']?></td>
+                    <td><?php echo $requ['name']?></td>
+                    <td><?php echo $requ['reqproblem']?></td>
+                    <td><?php echo $requ['reqdetails']?></td>
+                    <td><?php echo $requ['reqtel']?></td>
+                    <td><?php echo $requ['reqdate']?></td>
+                    <td><a href="admin-notify-status.php" class="nav-link active " onclick="">
+                      <i class="nav-icon fas fa-check-square"></i>
+                    </td>
+                    
+                  </tr>    
+      <?php
+          }
+      ?>
+          </tbody>
+          </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+
     </section>
 
-    <section class="content pb-3">
-      
-    </section>
+    
   </div>
 
   <footer class="main-footer">
@@ -63,6 +131,7 @@
       <b>Version</b> 1.0.0
     </div> -->
   </footer>
+ 
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
@@ -87,10 +156,34 @@
 <!-- AdminLTE for demo purposes -->
 <script src="../dist/js/demo.js"></script>
 <!-- Page specific script -->
+
+<!-- DataTables  & Plugins -->
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="../../plugins/jszip/jszip.min.js"></script>
+<script src="../../plugins/pdfmake/pdfmake.min.js"></script>
+<script src="../../plugins/pdfmake/vfs_fonts.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
 <script>
   $(function () {
 
   })
+</script>
+
+<script>
+  $(document).ready( function () {
+    $('#notifytable').DataTable();
+} );
 </script>
 </body>
 </html>

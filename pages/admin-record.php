@@ -42,7 +42,7 @@
 
   <!-- Sidebar -->
     <?php
-      include "admin-notify-side.php";
+      include "admin-record-side.php";
     ?>
   <!-- Sidebar -->
 
@@ -100,10 +100,8 @@
                     <td><?php echo $requ['reqdetails']?></td>
                     <td><?php echo $requ['reqtel']?></td>
                     <td><?php echo $requ['reqdate']?></td>
-                    <td>
-                      
-                        <a href="admin-notify-status.php?update_id=<?php echo $requ['reqid']?>" class="btn btn-primary">ยืนยัน</a>
-                        <!-- <a href="admin-notify-status.php?update_id=<?php echo $requ['reqid']?>" class="btn btn-danger">ลบ</a> -->
+                    <td><a href="admin-notify-status.php" class="nav-link active " onclick="">
+                      <i class="nav-icon fas fa-check-square"></i>
                     </td>
                     
                   </tr>    

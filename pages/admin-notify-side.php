@@ -45,18 +45,27 @@
           
           <li class="nav-item">
             <a href="admin-notify.php" class="nav-link active">
-              <i class="nav-icon fas fas fa-bell"></i>
+              <i class="nav-icon fas fa-check-square"></i>
               <p>
-                แจ้งเตือน
+                รอยืนยัน
               </p>
             </a>
           </li>
 
           <li class="nav-item">
             <a href="admin-list.php" class="nav-link">
-              <i class="nav-icon fas fa-list-alt"></i>
+              <i class="nav-icon fas fa-edit"></i>
               <p>
                 รายการแจ้งซ่อม
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="admin-record.php" class="nav-link">
+              <i class="nav-icon fas fa-list-alt"></i>
+              <p>
+                ประวัติการแจ้งซ่อม
               </p>
             </a>
           </li>

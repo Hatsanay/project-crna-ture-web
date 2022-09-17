@@ -34,7 +34,7 @@
   }
   .btn1{
     margin: 130px;
-    margin-left: 380px;
+    margin-left: 250px;
     width: 110px;
     background-color: #20c997;
     border-color: #20c997;
@@ -43,6 +43,20 @@
     color: #fff;
     background-color: #077e5b;
     border-color: #077e5b;
+}
+.btn2{
+  margin-top: -370px;
+    margin-left: 380px;
+    width: 108px;
+    background-color: red;
+    border-color: red;
+    color: white;  
+}
+
+.btn2:hover{
+    background-color: #881111;
+    border-color: #881111; 
+    color: white; 
 }
 </style>
 
@@ -81,19 +95,19 @@
               </div>
               <!-- /.card-header -->
               <div class="card-body">
-                <form>
+                <form action="usereq.php" method="post">
                   <div class="row">
                     <div class="col-sm-6">
                       <!-- text input -->
                       <div class="form-group">
                         <label>หมายเลขห้อง</label>
-                        <input type="text" class="form-control" placeholder="000" name="">
+                        <input type="text" class="form-control" placeholder="000" name="rqroom">
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>ชื่อ-นามสกุล</label>
-                        <input type="text" class="form-control" placeholder="สมศักดิ์ ใจดี" >
+                        <input type="text" class="form-control" placeholder="สมศักดิ์ ใจดี" name="rqname">
                       </div>
                     </div>
                   </div>
@@ -102,7 +116,7 @@
                       <!-- textarea -->
                       <div class="form-group">
                         <label>ปัญหา</label>
-                        <textarea class="form-control" rows="1" placeholder="หลอดไฟเสีย"></textarea>
+                        <textarea class="form-control" rows="1" placeholder="หลอดไฟเสีย" name="rqproblem"></textarea>
                       </div>
                     </div>
 
@@ -110,7 +124,7 @@
                       <!-- textarea -->
                       <div class="form-group">
                         <label>รายละเอียดเพิ่มเติม</label>
-                        <textarea class="form-control" rows="3" placeholder="เสีย 2 หลอด"></textarea>
+                        <textarea class="form-control" rows="3" placeholder="เสีย 2 หลอด" name="rqdetails"></textarea>
                       </div>
                     </div>
                   </div>
@@ -119,7 +133,7 @@
                       <!-- textarea -->
                       <div class="form-group">
                         <label>เบอร์โทร์</label>
-                        <textarea class="form-control" rows="1" placeholder="098xxxxxxx"></textarea>
+                        <textarea class="form-control" rows="1" placeholder="098xxxxxxx" name="rqtel"></textarea>
                       </div>
                     </div>
 
@@ -128,6 +142,9 @@
                       <!-- textarea -->
                       <div class="form-group">
                         <button class="btn btn-primary btn-lg btn1" type="submit" value="">แจ้ง</button>
+                      </div>
+                      <div class="form-group">
+                        <button class="btn btn-lg btn2" type="reset" value="">ลบ</button>
                       </div>
                     </div>
                     </div>

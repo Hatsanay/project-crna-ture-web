@@ -42,7 +42,8 @@
           
           
         
-               <li class="nav-item">
+          
+          <li class="nav-item">
             <a href="admin-notify.php" class="nav-link">
               <i class="nav-icon fas fa-check-square"></i>
               <p>
@@ -61,7 +62,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="admin-record.php" class="nav-link">
+            <a href="admin-record.php" class="nav-link active">
               <i class="nav-icon fas fa-list-alt"></i>
               <p>
                 ประวัติการแจ้งซ่อม
@@ -70,7 +71,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="admin-setting.php" class="nav-link active">
+            <a href="admin-setting.php" class="nav-link">
               <i class="nav-icon fas fa-cog"></i>
               <p>
                 ตั้งค่า
