@@ -122,7 +122,7 @@
 
       <div class="card card-warning">
               <div class="card-header">
-                <h3 class="card-title">แบบคำร้องแจ้งซ่อมหอพัก</h3>
+                <h3 class="card-title">รายละเอียดคำร้องแจ้งซ่อมหอพัก</h3>
                 
               </div>
               <!-- /.card-header -->
