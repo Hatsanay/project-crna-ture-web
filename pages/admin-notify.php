@@ -27,7 +27,22 @@
 </head>
 
 
-
+<style>
+  .btn-a{
+    margin-left: 40px;
+    width: 70px;
+  }
+  .btn-a1{
+    width: 70px;
+  }
+  .btn-a2{
+    margin-left: 30px;
+    width: 50px;
+    background-color: #efdc01;
+    border-color: #efdc01;
+    color: black;
+  }
+</style>
 
 
 
@@ -79,6 +94,7 @@
                     <th>รายละเอียดเพิ่มเติม</th>
                     <th>เบอร์โทร</th>
                     <th>วันที่แจ้ง</th>
+                    <th>รายละเอียด</th>
                     <th>ยืนยันแจ้งซ่อม</th>
                   </tr>
                   </thead>
@@ -100,10 +116,14 @@
                     <td><?php echo $requ['reqdetails']?></td>
                     <td><?php echo $requ['reqtel']?></td>
                     <td><?php echo $requ['reqdate']?></td>
-                    <td>
-                      
-                        <a href="admin-notify-status.php?update_id=<?php echo $requ['reqid']?>" class="btn btn-primary">ยืนยัน</a>
+                    <td>    
+                        <a href="admin-notify-detial.php?detial_id=<?php echo $requ['reqid']?>" class="btn btn-primary btn-a2"><i class="nav-icon fas fa-eye"></i></a>
                         <!-- <a href="admin-notify-status.php?update_id=<?php echo $requ['reqid']?>" class="btn btn-danger">ลบ</a> -->
+                    </td>
+                    
+                    <td>    
+                        <a href="admin-notify-status.php?update_id=<?php echo $requ['reqid']?>" class="btn btn-primary btn-a">ยืนยัน</a>
+                        <a href="admin-notify-delete.php?delete_id=<?php echo $requ['reqid']?>" class="btn btn-danger btn-a1">ลบ</a>
                     </td>
                     
                   </tr>    

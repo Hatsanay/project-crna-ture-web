@@ -28,7 +28,19 @@
 
 
 
-
+<style>
+  .btn-a{
+    margin-left: 60px;
+    width: 100px;
+  }
+  .btn-a2{
+    margin-left: 30px;
+    width: 50px;
+    background-color: #efdc01;
+    border-color: #efdc01;
+    color: black;
+  }
+</style>
 
 
 
@@ -65,20 +77,21 @@
 
       <div class="card">
               <div class="card-header">
-                <h3 class="card-title">รอยืนยันการแจ้งซ่อม</h3>
+                <h3 class="card-title">แก้ไขสถานะการซ่อม</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
                 <table id="notifytable" class="table table-bordered table-striped">
                   <thead>
                   <tr>
-                    <th>รหัส</th>
+                  <th>รหัส</th>
                     <th>หมายเลขห้อง</th>
                     <th>ชื่อ-นามสกุล</th>
                     <th>ปัญหา</th>
                     <th>รายละเอียดเพิ่มเติม</th>
                     <th>เบอร์โทร</th>
                     <th>วันที่แจ้ง</th>
+                    <th>รายละเอียด</th>
                     <th>ยืนยันแจ้งซ่อม</th>
                   </tr>
                   </thead>
@@ -100,9 +113,19 @@
                     <td><?php echo $requ['reqdetails']?></td>
                     <td><?php echo $requ['reqtel']?></td>
                     <td><?php echo $requ['reqdate']?></td>
-                    <td><a href="admin-notify-status.php" class="nav-link active " onclick="">
-                      <i class="nav-icon fas fa-check-square"></i>
+                    <td>    
+                        <a href="admin-list-detial.php?detial_id=<?php echo $requ['reqid']?>" class="btn btn-primary btn-a2"><i class="nav-icon fas fa-eye"></i></a>
+                        <!-- <a href="admin-notify-status.php?update_id=<?php echo $requ['reqid']?>" class="btn btn-danger">ลบ</a> -->
                     </td>
+
+                    <td>
+                    <a href="admin-list-status.php?updatestatus_id=<?php echo $requ['reqid']?>" class="btn btn-success btn-a">เสร็จสิ้น</a>
+                    </td>
+
+
+                    <!-- <td><a href="admin-notify-status.php" class="nav-link active " onclick="">
+                      <i class="nav-icon fas fa-check-square"></i>
+                    </td> -->
                     
                   </tr>    
       <?php
