@@ -71,11 +71,20 @@
             </a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item icon1">
             <a href="admin-setting.php" class="nav-link">
-              <i class="nav-icon fas fa-cog"></i>
+              <i class="nav-icon fas fa-plus-square "></i>
               <p>
-                ตั้งค่า
+                เพิ่มเจ้าหน้าที่
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item icon1">
+            <a href="admin-officer.php" class="nav-link">
+              <i class="nav-icon fas fa-table "></i>
+              <p>
+                รายชื่อเจ้าหน้าที่
               </p>
             </a>
           </li>

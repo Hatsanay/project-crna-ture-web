@@ -44,7 +44,7 @@
         
           
           <li class="nav-item">
-            <a href="admin-notify.php" class="nav-link">
+            <a href="officer-notification.php" class="nav-link">
               <i class="nav-icon fas fa-check-square"></i>
               <p>
                 รอยืนยัน
@@ -53,7 +53,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="admin-list.php" class="nav-link">
+            <a href="officer-list.php" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
                 รายการแจ้งซ่อม
@@ -62,7 +62,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="admin-record.php" class="nav-link active">
+            <a href="officer-record.php" class="nav-link active">
               <i class="nav-icon fas fa-list-alt"></i>
               <p>
                 ประวัติการแจ้งซ่อม
@@ -70,23 +70,14 @@
             </a>
           </li>
 
-          <li class="nav-item icon1">
+          <!-- <li class="nav-item">
             <a href="admin-setting.php" class="nav-link">
-              <i class="nav-icon fas fa-plus-square "></i>
+              <i class="nav-icon fas fa-cog"></i>
               <p>
-                เพิ่มเจ้าหน้าที่
+                ตั้งค่า
               </p>
             </a>
-          </li>
-
-          <li class="nav-item icon1">
-            <a href="admin-officer.php" class="nav-link">
-              <i class="nav-icon fas fa-table "></i>
-              <p>
-                รายชื่อเจ้าหน้าที่
-              </p>
-            </a>
-          </li>
+          </li> -->
 
           <li class="nav-item">
             <a href="logout.php" class="nav-link">

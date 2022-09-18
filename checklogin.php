@@ -13,7 +13,14 @@ if($num==1){
     $_SESSION['name']=$row['usefname']." ".$row['uselname'];
     $_SESSION['user_id']=$row['id'];
     $_SESSION['user_level']=$row['level'];
-    Header("Location: pages\admin-notify.php");
+
+if($_SESSION['user_level']==1){
+     Header("Location: pages\admin-notify.php");
+}elseif(($_SESSION['user_level']==2)){
+     Header("Location: pages\officer-notification.php"); 
+    // echo "<meta http-equiv='refresh'content='0;URL=index.php'/>";   
+}
+    // Header("Location: pages\admin-notify.php");
 
 }
 

@@ -19,6 +19,7 @@
         transition: width ease-in-out .3s;
         min-height: 10vh;
         }
+        
     </style>
 
 
@@ -61,14 +62,16 @@
             </a>
           </li>
 
-          <li class="nav-item">
-            <a href="admin-record.php" class="nav-link active">
-              <i class="nav-icon fas fa-list-alt"></i>
-              <p>
-                ประวัติการแจ้งซ่อม
-              </p>
-            </a>
-          </li>
+            <li class="nav-item">
+              <a href="admin-record.php" class="nav-link">
+                <i class="nav-icon fas fa-list-alt"></i>
+                <p>
+                  ประวัติการแจ้งซ่อม
+                </p>
+              </a>
+            </li>
+          
+          
 
           <li class="nav-item icon1">
             <a href="admin-setting.php" class="nav-link">
@@ -80,17 +83,18 @@
           </li>
 
           <li class="nav-item icon1">
-            <a href="admin-officer.php" class="nav-link">
+            <a href="admin-officer.php" class="nav-link active">
               <i class="nav-icon fas fa-table "></i>
               <p>
                 รายชื่อเจ้าหน้าที่
               </p>
             </a>
           </li>
+          
 
-          <li class="nav-item">
+          <li class="nav-item ">
             <a href="logout.php" class="nav-link">
-              <i class="nav-icon fas fa-share-square"></i>
+              <i class="nav-icon fas fa-share-square "></i>
               <p>
                 ออกจากระบบ
               </p>
