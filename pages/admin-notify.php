@@ -49,6 +49,10 @@
 
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
+
+<!-- <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="../assets\logo2.png" alt="" height="500" width="666">
+  </div> -->
   <!-- Navbar -->
   <?php
         include "../navbar-admin.php";
