@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>Login Admin</title>
 
   <link rel="stylesheet" href="Boostrap4/bootstrap.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -45,17 +45,18 @@
 <div class="comtianer">
         <div class="row">
         <div class="col-md-4"></div>
-        <div class="col-md-4" style="margin-top: 10%;" >
-            <H1 align="center">เข้าสู่ระบบ</H1>
-        <form action="checklogin.php"style="margin-top:30px" method="post">
+        <div class="col-md-4" style="margin-top: 10%;" align="center" >
+            <!-- <H1 align="center">เข้าสู่ระบบ</H1> -->
+            <img src="assets\Logo.png" alt="" width="500px">
+        <form action="checklogin3.php"style="margin-top:30px" method="post">
             <div class="form">
-                <input type="text" class="form-control" placeholder="อีเมล*" name="user" style="height:50px;" >
+                <input type="text" class="form-control" placeholder="ชื่อผู้ใช้*" name="user" style="height:50px;" >
             </div>
             <div class="form">
                 <input type="password" class="form-control mt-3" placeholder="รหัสผ่าน*"  name="pwd" style="height:50px;">
             </div>
             <button type="submit" class="btn btn-danger btn-block btn-lg" style="margin-top: 25px;">เข้าสู่ระบบ</button>
-            <a href="index.php" class="btn btn-primary btn-block btn-lg" style="margin-top: 5px;">ย้อนกลับ</a>
+            <!-- <a href="index.php" class="btn btn-primary btn-block btn-lg" style="margin-top: 5px;">ย้อนกลับ</a> -->
         </form>
         </div>
         <div class="col-md-4"></div>

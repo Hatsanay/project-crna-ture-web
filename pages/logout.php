@@ -1,3 +1,5 @@
 <?php
-    echo "<meta http-equiv='refresh'content='0;URL=../login.php'/>";
+session_start();
+session_destroy();
+header("Location: ../login.php ");	
 ?>

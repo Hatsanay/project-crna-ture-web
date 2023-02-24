@@ -101,13 +101,13 @@
                       <!-- text input -->
                       <div class="form-group">
                         <label>หมายเลขห้อง</label>
-                        <input type="text" class="form-control" placeholder="000" name="rqroom">
+                        <input type="text" class="form-control" placeholder="000" name="rqroom" required>
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>ชื่อ-นามสกุล</label>
-                        <input type="text" class="form-control" placeholder="สมศักดิ์ ใจดี" name="rqname">
+                        <input type="text" class="form-control" placeholder="สมศักดิ์ ใจดี" name="rqname" required>
                       </div>
                     </div>
                   </div>
@@ -116,7 +116,7 @@
                       <!-- textarea -->
                       <div class="form-group">
                         <label>ปัญหา</label>
-                        <textarea class="form-control" rows="1" placeholder="หลอดไฟเสีย" name="rqproblem"></textarea>
+                        <textarea class="form-control" rows="1" placeholder="หลอดไฟเสีย" name="rqproblem"required></textarea>
                       </div>
                     </div>
 
@@ -132,8 +132,8 @@
                     <div class="col-sm-6">
                       <!-- textarea -->
                       <div class="form-group">
-                        <label>เบอร์โทร์</label>
-                        <textarea class="form-control" rows="1" placeholder="098xxxxxxx" name="rqtel"></textarea>
+                        <label>เบอร์โทร</label>
+                        <textarea class="form-control" rows="1" placeholder="098xxxxxxx" required name="rqtel"></textarea>
                       </div>
                     </div>
 
